@@ -25,7 +25,7 @@ class LogInActivity : AppCompatActivity() {
             window.statusBarColor = this.resources.getColor(R.color.Primary_color)
         }
         binding.textViewRegisterHere.setOnClickListener(){
-            val i = Intent(this, LogInActivity::class.java)
+            val i = Intent(this, RegisterHere::class.java)
             startActivity(i)
             finish()
         }

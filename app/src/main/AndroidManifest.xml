@@ -11,6 +11,7 @@
         android:theme="@style/Theme.EasyERPSolution">
         <activity
             android:name=".ui.LogIn.RegisterHere"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".ui.LogIn.LogInActivity"
