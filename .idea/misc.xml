@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../.gradle/caches/transforms-3/d465b125273bcedb60cc64819b823f5d/transformed/appcompat-1.4.2/res/layout/abc_action_bar_title_item.xml" value="0.14463019250253292" />
+        <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1921875" />
       </map>
     </option>
   </component>
