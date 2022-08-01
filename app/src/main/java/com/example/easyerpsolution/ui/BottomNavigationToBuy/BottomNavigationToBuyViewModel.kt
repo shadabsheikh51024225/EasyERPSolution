@@ -1,13 +1,13 @@
-package com.example.easyerpsolution.ui.home
+package com.example.easyerpsolution.ui.BottomNavigationToBuy
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class BottomNavigationToBuyViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is to buy Fragment"
     }
     val text: LiveData<String> = _text
 }

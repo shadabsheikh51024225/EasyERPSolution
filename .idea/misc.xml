@@ -4,13 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../.gradle/caches/transforms-3/d465b125273bcedb60cc64819b823f5d/transformed/appcompat-1.4.2/res/layout/abc_action_bar_title_item.xml" value="0.14463019250253292" />
+        <entry key="app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.162" />
         <entry key="app/src/main/res/drawable/cureved_button_primary.xml" value="0.226" />
         <entry key="app/src/main/res/drawable/curved_edit_text.xml" value="0.136" />
         <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.10740740740740741" />
         <entry key="app/src/main/res/layout/activity_register_here.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/bottom_nav_fragment_categories.xml" value="0.10869565217391304" />
+        <entry key="app/src/main/res/layout/bottom_nav_fragment_new.xml" value="0.10869565217391304" />
+        <entry key="app/src/main/res/layout/bottom_nav_fragment_to_buy.xml" value="0.10869565217391304" />
+        <entry key="app/src/main/res/layout/bottom_navigation_gal_fragment.xml" value="0.10869565217391304" />
+        <entry key="app/src/main/res/layout/bottom_navigation_me_fragment.xml" value="0.10869565217391304" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

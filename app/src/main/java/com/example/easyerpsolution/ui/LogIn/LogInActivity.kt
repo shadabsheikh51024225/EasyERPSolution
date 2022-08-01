@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import com.example.easyerpsolution.MainActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityLogInBinding
 
@@ -23,6 +24,11 @@ class LogInActivity : AppCompatActivity() {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.Primary_color)
+        }
+        binding.buttonLogInAccess.setOnClickListener {
+            val i = Intent(this, MainActivity::class.java)
+            startActivity(i)
+            finish()
         }
         binding.textViewRegisterHere.setOnClickListener(){
             val i = Intent(this, RegisterHere::class.java)

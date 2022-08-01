@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">EasyERPSolution</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="bottom_navigation_to_buy">To buy</string>
+    <string name="bottom_navigation_categories">Categories</string>
+    <string name="bottom_navigation_new">New</string>
+    <string name="bottom_navigation_gals">Gals</string>
+    <string name="bottom_navigation_user">Me</string>
 </resources>
