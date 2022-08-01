@@ -9,8 +9,9 @@
     <color name="white">#FFFFFFFF</color>
 
     //app def colors.
-
     <color name="Primary_color">#e23e9d</color>
     <color name="Secondary_color">#575656</color>
     <color name="Tertiary_color">#a1a1a1</color>
+    //toolbar background.
+    <color name="app_bar_back">#9d1d67</color>
 </resources>

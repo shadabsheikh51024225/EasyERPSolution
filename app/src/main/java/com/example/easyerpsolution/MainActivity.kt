@@ -2,12 +2,12 @@ package com.example.easyerpsolution
 
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
 import android.view.WindowManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.easyerpsolution.databinding.ActivityMainBinding
 
@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+      //  setSupportActionBar(findViewById(R.id.main_tool_bar))
         if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
@@ -34,10 +35,21 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_to_buy, R.id.navigation_categories, R.id.navigation_New,R.id.bottom_nav_root_gals,R.id.navigation_me
+                R.id.navigation_to_buy,
+                R.id.navigation_categories,
+                R.id.navigation_New,
+                R.id.bottom_nav_root_gals,
+                R.id.navigation_me
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        //  setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        getMenuInflater().inflate(R.menu.app_bar_menu, menu);
+//        return true;
+//    }
+
+
 }
