@@ -6,10 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.easyerpsolution.databinding.BottomNavFragmentToBuyBinding
-import com.example.easyerpsolution.ui.BottomNavigationToBuy.Adapters.RecyclerAdapter
+import com.example.easyerpsolution.ui.BottomNavigationToBuy.Adapters.AddActivityAdapter
+import com.example.easyerpsolution.ui.BottomNavigationToBuy.Adapters.CategoriesAdapter
+import com.example.easyerpsolution.ui.BottomNavigationToBuy.Adapters.NewProductsAdapter
 
 
 class BottomNavigationToBuyFragment : Fragment() {
@@ -17,7 +20,12 @@ class BottomNavigationToBuyFragment : Fragment() {
     private var _binding: BottomNavFragmentToBuyBinding? = null
 
     private var layoutManager: RecyclerView.LayoutManager? = null
-    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
+    private var layoutManager_new_products: RecyclerView.LayoutManager? = null
+    private var layoutManager_grid: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<AddActivityAdapter.ViewHolder>? = null
+    private var adapter_categories: RecyclerView.Adapter<CategoriesAdapter.ViewHolder>? = null
+    private var adapter_new_products: RecyclerView.Adapter<NewProductsAdapter.ViewHolder>? = null
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -40,9 +48,19 @@ class BottomNavigationToBuyFragment : Fragment() {
 
         layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerview.layoutManager = layoutManager
-
-        adapter = RecyclerAdapter()
+        adapter = AddActivityAdapter()
         binding.recyclerview.adapter = adapter
+        //grid layout.
+        layoutManager_grid = GridLayoutManager(context, 2, LinearLayoutManager.HORIZONTAL, true)
+        binding.recyclerviewCategories.layoutManager = layoutManager_grid
+        adapter_categories = CategoriesAdapter()
+        binding.recyclerviewCategories.adapter = adapter_categories
+
+        //new products
+        layoutManager_new_products = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        binding.recyclerviewNewProducts.layoutManager = layoutManager_new_products
+        adapter_new_products = NewProductsAdapter()
+        binding.recyclerviewNewProducts.adapter = adapter_new_products
         return root
     }
 

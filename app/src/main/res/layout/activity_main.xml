@@ -12,35 +12,25 @@
     <include
         layout="@layout/app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.25"></include>
+        android:layout_height="50dp"
+        android:layout_weight="0.15"></include>
 
-    <ScrollView
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3.65">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <fragment
-                android:id="@+id/nav_host_fragment_activity_main"
-                android:name="androidx.navigation.fragment.NavHostFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:defaultNavHost="true"
-                app:navGraph="@navigation/bottom_nav_graph" />
-        </LinearLayout>
-    </ScrollView>
+        android:layout_weight="3.7"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/bottom_nav_graph" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_weight="0.1"
+        android:layout_weight="0.15"
         android:background="?android:attr/windowBackground"
         android:foregroundGravity="bottom"
         app:itemIconTint="@drawable/bottom_navigation_selector"
