@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.8"
-            android:background="@color/Tertiary_color"
+            android:background="@color/list_background"
             android:divider="@color/Tertiary_color"
             android:listSelector="@color/Primary_color" />
 

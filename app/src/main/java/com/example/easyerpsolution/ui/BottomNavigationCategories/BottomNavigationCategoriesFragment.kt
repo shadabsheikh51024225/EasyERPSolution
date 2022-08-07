@@ -6,11 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.TextView
+import androidx.compose.material.Text
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.BottomNavFragmentCategoriesBinding
 import com.example.easyerpsolution.ui.BottomNavigationCategories.Adapters.CategoriesCardAdapter
 
@@ -61,9 +64,10 @@ class BottomNavigationCategoriesFragment : Fragment() {
 
         //left side list data settings.
         val ArrayAdapter: ArrayAdapter<*>
-        ArrayAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, textData)
+        ArrayAdapter = ArrayAdapter(requireContext(), R.layout.categories_left_side_list_item, textData)
         binding.categoriesRecyclerviewList.adapter = ArrayAdapter
         binding.categoriesRecyclerviewList.choiceMode = android.widget.ListView.CHOICE_MODE_SINGLE
+
 
         //grid layout for right cards.
         layoutManager_right_cards = GridLayoutManager(context, 3, LinearLayoutManager.VERTICAL, true)

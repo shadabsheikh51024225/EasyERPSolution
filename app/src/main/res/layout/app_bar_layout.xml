@@ -45,7 +45,7 @@
             android:id="@+id/imageView7"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:padding="5dp"
+            android:padding="10dp"
             app:srcCompat="@drawable/app_bar_notification_three" />
 
 </LinearLayout>

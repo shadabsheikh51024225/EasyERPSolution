@@ -31,10 +31,7 @@ class BottomNavigationMeFragment : Fragment() {
         _binding = BottomNavigationMeFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textMe
-        MeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
         return root
     }
 
