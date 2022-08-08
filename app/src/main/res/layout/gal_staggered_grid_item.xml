@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/Primary_color"
+   >
+
+    <ImageView
+        android:id="@+id/item_image_gal_staggered"
+        android:layout_width="wrap_content"
+        android:scaleType = "fitXY"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
