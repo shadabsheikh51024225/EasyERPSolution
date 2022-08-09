@@ -6,15 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import com.example.easyerpsolution.R
-import com.example.easyerpsolution.databinding.BottomNavigationGalFragmentBinding
-import com.example.easyerpsolution.databinding.BottomNavigationMeFragmentBinding
-import com.example.easyerpsolution.ui.BottomNavigationToBuy.BottomNavigationToBuyViewModel
+import com.example.easyerpsolution.databinding.BottomNavFragmentMeBinding
+
 
 class BottomNavigationMeFragment : Fragment() {
 
-    private var _binding: BottomNavigationMeFragmentBinding? = null
+    private var _binding: BottomNavFragmentMeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,7 +25,7 @@ class BottomNavigationMeFragment : Fragment() {
         val MeViewModel =
             ViewModelProvider(this).get(BottomNavigationMeViewModel::class.java)
 
-        _binding = BottomNavigationMeFragmentBinding.inflate(inflater, container, false)
+        _binding = BottomNavFragmentMeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
 

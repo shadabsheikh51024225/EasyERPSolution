@@ -8,7 +8,7 @@
         android:id="@+id/navigation_me"
         android:name="com.example.easyerpsolution.ui.BottomNavigationMe.BottomNavigationMeFragment"
         android:label="bottom_navigation_me_fragment"
-        tools:layout="@layout/bottom_navigation_me_fragment" />
+        tools:layout="@layout/bottom_navigation_new_stuff_fragment" />
     <fragment
         android:id="@+id/navigation_gal"
         android:name="com.example.easyerpsolution.ui.BottomNavigationGals.BottomNavigationGalFragment"
@@ -23,7 +23,7 @@
         android:id="@+id/navigation_New"
         android:name="com.example.easyerpsolution.ui.BottomNavigationNew.BottomNavigationNewFragment"
         android:label="bottom_nav_fragment_new"
-        tools:layout="@layout/bottom_nav_fragment_new" />
+        tools:layout="@layout/bottom_nav_fragment_me" />
     <fragment
         android:id="@+id/navigation_categories"
         android:name="com.example.easyerpsolution.ui.BottomNavigationCategories.BottomNavigationCategoriesFragment"

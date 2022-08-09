@@ -4,14 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.easyerpsolution.databinding.BottomNavFragmentNewBinding
-import com.example.easyerpsolution.databinding.BottomNavigationMeFragmentBinding
+import com.example.easyerpsolution.databinding.BottomNavigationNewStuffFragmentBinding
 import com.example.easyerpsolution.ui.BottomNavigationNew.Adapters.BottomCardAdapters
 import com.example.easyerpsolution.ui.BottomNavigationNew.Adapters.TopCardAdapters
 import com.example.easyerpsolution.ui.BottomNavigationToBuy.Adapters.CategoriesAdapter
@@ -20,11 +18,12 @@ import com.example.easyerpsolution.ui.BottomNavigationToBuy.BottomNavigationToBu
 
 class BottomNavigationNewFragment : Fragment() {
 
-    private var _binding: BottomNavigationMeFragmentBinding? = null
+    private var _binding: BottomNavigationNewStuffFragmentBinding? = null
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var adapter_top_cards: RecyclerView.Adapter<TopCardAdapters.ViewHolder>? = null
     private var layoutManager_bottom: RecyclerView.LayoutManager? = null
-    private var adapter_top_cards_bottom: RecyclerView.Adapter<BottomCardAdapters.ViewHolder>? = null
+    private var adapter_top_cards_bottom: RecyclerView.Adapter<BottomCardAdapters.ViewHolder>? =
+        null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -38,7 +37,7 @@ class BottomNavigationNewFragment : Fragment() {
         val NewViewModel =
             ViewModelProvider(this).get(BottomNavigationNewViewModel::class.java)
 
-        _binding = BottomNavigationMeFragmentBinding.inflate(inflater, container, false)
+        _binding = BottomNavigationNewStuffFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         //top card data settings.
