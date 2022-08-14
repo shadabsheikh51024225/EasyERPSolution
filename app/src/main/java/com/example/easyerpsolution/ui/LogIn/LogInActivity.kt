@@ -4,9 +4,8 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.WindowManager
-import com.example.easyerpsolution.MainActivity
+import com.example.easyerpsolution.ui.MainActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityLogInBinding
 

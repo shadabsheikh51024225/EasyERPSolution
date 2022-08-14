@@ -1,14 +1,14 @@
-package com.example.easyerpsolution
+package com.example.easyerpsolution.ui
 
 import android.os.Build
 import android.os.Bundle
-import android.view.Menu
 import android.view.WindowManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

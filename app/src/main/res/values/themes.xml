@@ -21,4 +21,13 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
+    <style name="Theme.EasyERPSolution.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.EasyERPSolution.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.EasyERPSolution.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

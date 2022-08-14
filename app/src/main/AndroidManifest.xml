@@ -10,9 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyERPSolution">
         <activity
+            android:name=".ui.UserActivites.Coupons.MyOrders"
+            android:exported="false"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
+        <activity
+            android:name=".ui.UserActivites.Coupons.PurseActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
+        <activity
+            android:name=".ui.UserActivites.Coupons.CouponsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_coupons"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
+        <activity
             android:name=".ui.LogIn.RegisterHere"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".ui.LogIn.LogInActivity"
             android:exported="false"
@@ -20,17 +33,18 @@
         <activity
             android:name=".ui.SplashScreen.SplashScreen"
             android:exported="true"
-            android:theme="@style/SplashScreen">
-
-        </activity>
+            android:theme="@style/SplashScreen" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
