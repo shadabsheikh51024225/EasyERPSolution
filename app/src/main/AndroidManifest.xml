@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyERPSolution">
         <activity
+            android:name=".ui.UserActivites.Coupons.OrderDetails"
+            android:exported="false"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar"/>
+        <activity
             android:name=".ui.UserActivites.Coupons.MyOrders"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />

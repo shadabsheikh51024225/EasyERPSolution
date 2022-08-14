@@ -6,12 +6,19 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.ArrayAdapter
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityCouponsBinding
 import com.example.easyerpsolution.databinding.ActivityMyOrdersBinding
+import com.example.easyerpsolution.ui.UserActivites.Coupons.Adapter.MyOrderAdapter
+import com.example.easyerpsolution.ui.UserActivites.Coupons.Adapter.PurseAdapterUsers
 
 class MyOrders : AppCompatActivity() {
     private lateinit var binding: ActivityMyOrdersBinding
+    private var adapter_myOrder: RecyclerView.Adapter<MyOrderAdapter.ViewHolder>? = null
+    private var layoutManager_myOrder: RecyclerView.LayoutManager? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMyOrdersBinding.inflate(layoutInflater)
@@ -27,10 +34,27 @@ class MyOrders : AppCompatActivity() {
 
         //spinner
         val languages = resources.getStringArray(R.array.frequancy)
-        val adapter = ArrayAdapter(this,
-            android.R.layout.simple_spinner_item, languages)
-       binding.spinner.adapter = adapter
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item, languages
+        )
+        binding.spinner.adapter = adapter
+
+        //List adapter
+        layoutManager_myOrder = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        binding.recylerListMyOrder.layoutManager = layoutManager_myOrder
+        adapter_myOrder = MyOrderAdapter()
+        binding.recylerListMyOrder.adapter = adapter_myOrder
+        binding.recylerListMyOrder.addItemDecoration(
+            DividerItemDecoration(
+                this,
+                DividerItemDecoration.VERTICAL
+            )
+        )
+
+
     }
+
     fun finish(view: View) {
         finish()
     }

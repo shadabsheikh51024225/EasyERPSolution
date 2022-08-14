@@ -23,4 +23,5 @@
     <color name="spinner_background">#b04b85</color>
     <color name="delivery_successful">#e9f8e4</color>
     <color name="deliver_expected">#fcebf5</color>
+    <color name="yellow">#FFFF00</color>
 </resources>

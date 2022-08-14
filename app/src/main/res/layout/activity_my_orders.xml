@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.UserActivites.Coupons.MyOrders">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/coupons_toolbar"
@@ -45,9 +46,18 @@
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:elevation="10dp" />
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/spinner_back_ground"
+                android:theme="@style/mySpinnerItemStyle" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_list_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:divider="@color/Tertiary_color"
+        android:dividerHeight="1dp" />
 
 </LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ordered on:"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/ordered_on_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/Secondary_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/my_order_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="New Color Lipstick"
+                android:textColor="@color/Secondary_color"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Color: Rojo"
+                android:textColor="@color/Secondary_color"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Quantity: 1"
+                android:textColor="@color/Secondary_color"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Order number. #20125368237"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/texview_order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/Primary_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/deliver_expected"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            android:text="Delivery accepted by: 10-June-2022"
+            android:textColor="@color/Primary_color"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_track_order"
+            android:layout_width="119dp"
+            android:layout_height="34dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/curved_button_primary"
+            android:text="Track order"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_order_details"
+            android:layout_width="119dp"
+            android:layout_height="34dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_with_border"
+            android:text="Order details"
+            android:textColor="@color/Primary_color" />
+    </LinearLayout>
+
+
+</LinearLayout>
