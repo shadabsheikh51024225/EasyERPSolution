@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.ui.UserActivites.Coupons.CouponsActivity
 import com.example.easyerpsolution.ui.UserActivites.Coupons.OrderDetails
+import com.example.easyerpsolution.ui.UserActivites.Coupons.TrackOrder
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -54,14 +55,15 @@ class MyOrderAdapter() : RecyclerView.Adapter<MyOrderAdapter.ViewHolder>(){
         var date: TextView
         var ammount: TextView
         var productImages:ImageView
-        var button:Button
-
+        var button_details:Button
+        var button_track:Button
 
         init {
             date = itemView.findViewById(R.id.ordered_on_date)
             ammount = itemView.findViewById(R.id.texview_order_amount)
             productImages = itemView.findViewById(R.id.my_order_image)
-            button = itemView.findViewById(R.id.button_order_details)
+            button_details = itemView.findViewById(R.id.button_order_details)
+            button_track = itemView.findViewById(R.id.button_track_order)
 
         }
     }
@@ -78,9 +80,14 @@ class MyOrderAdapter() : RecyclerView.Adapter<MyOrderAdapter.ViewHolder>(){
         viewHolder.date.setText(dateFormat?.format(Date()))
         viewHolder.productImages.setImageResource(imageProducts[i])
         val context: Context = viewHolder.itemView.getContext()
-        viewHolder.button.setOnClickListener(View.OnClickListener {
+        viewHolder.button_details.setOnClickListener(View.OnClickListener {
 
             val i = Intent(context, OrderDetails::class.java)
+            startActivity(context,i,null)
+        })
+        viewHolder.button_track.setOnClickListener(View.OnClickListener {
+
+            val i = Intent(context, TrackOrder::class.java)
             startActivity(context,i,null)
         })
     }

@@ -10,8 +10,14 @@
         <item>Last 3 months</item>
         <item>Year 2021</item>
         <item>Year 2022</item>
-
     </string-array>
+    <array name="details">
+        <item>Personal</item>
+        <item>Location</item>
+        <item>Usage</item>
+        <item>Employment</item>
+        <item>Loan</item>
+    </array>
     <!--To Buy Activity-->
     <string name="see_more"> <u>See more></u></string>
     <string name="title_activity_coupons">CouponsActivity</string>
