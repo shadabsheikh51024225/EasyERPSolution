@@ -7,6 +7,13 @@
     <item name="textColorAlertDialogListItem">@color/white</item>
         <item name="android:background">@color/spinner_background</item>
     </style>
+
+    <!--    //spiner style-->
+    <style name="mySpinnerItemStyleproductdetails" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/Tertiary_color</item>
+        <item name="textColorAlertDialogListItem">@color/spinner_back_ground</item>
+        <item name="android:background">@color/spinner_back_ground</item>
+    </style>
 <!--rating bar style-->
 
     <style name="RatingBar" parent="Theme.AppCompat">

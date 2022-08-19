@@ -1,11 +1,15 @@
 package com.example.easyerpsolution.ui.BottomNavigationCategories.Adapters
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.easyerpsolution.R
+import com.example.easyerpsolution.ui.ProductDtails.ProductDetails
+
 
 class CategoriesCardAdapter : RecyclerView.Adapter<CategoriesCardAdapter.ViewHolder>() {
     private val images = intArrayOf(
@@ -45,6 +49,11 @@ class CategoriesCardAdapter : RecyclerView.Adapter<CategoriesCardAdapter.ViewHol
 
         init {
             itemImage = itemView.findViewById(R.id.item_image_categories_right_card)
+            itemView.setOnClickListener(View.OnClickListener {
+                val context: Context = it.getContext()
+                val intent = Intent(context, ProductDetails::class.java)
+                context.startActivity(intent)
+            })
 
         }
     }
@@ -52,6 +61,7 @@ class CategoriesCardAdapter : RecyclerView.Adapter<CategoriesCardAdapter.ViewHol
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val v = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.categories_right_card_item, viewGroup, false)
+
         return ViewHolder(v)
     }
 

@@ -18,6 +18,14 @@
         <item>Employment</item>
         <item>Loan</item>
     </array>
+
+    <array name="select_size">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XLL</item>
+    </array>
     <!--To Buy Activity-->
     <string name="see_more"> <u>See more></u></string>
     <string name="title_activity_coupons">CouponsActivity</string>
@@ -111,4 +119,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
