@@ -42,7 +42,7 @@
         <entry key="app/src/main/res/layout/coupons_list_items.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_check_product_details.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/fragment_description__product_details.xml" value="0.23958333333333334" />
-        <entry key="app/src/main/res/layout/fragment_specification_product_details.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/layout/fragment_specification_product_details.xml" value="0.33" />
         <entry key="app/src/main/res/layout/gal_staggered_grid_item.xml" value="0.17481884057971014" />
         <entry key="app/src/main/res/layout/me_list_view_item.xml" value="0.16614583333333333" />
         <entry key="app/src/main/res/layout/my_order_item.xml" value="0.375" />

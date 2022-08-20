@@ -288,10 +288,18 @@ veniam, quis nostrud exercitation ullamco laboris nisi." />
                 app:tabTextColor="@color/Secondary_color" >
 
             </com.google.android.material.tabs.TabLayout>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
 
+                android:layout_marginRight="10dp"
+                android:background="@color/Tertiary_color" />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/tab_viewpager"
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="600dp"
                 android:layout_marginLeft="10dp"
