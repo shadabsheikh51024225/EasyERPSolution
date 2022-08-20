@@ -8,6 +8,7 @@
         <entry key="../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/drawable/add_quantity_back_ground.xml" value="0.168" />
         <entry key="app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/button_back_apply_coupon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_with_border.xml" value="0.3" />
         <entry key="app/src/main/res/drawable/categories_card_selector.xml" value="0.3" />
         <entry key="app/src/main/res/drawable/circle_share_image.xml" value="0.1" />
@@ -16,11 +17,13 @@
         <entry key="app/src/main/res/drawable/curved_buttons.xml" value="0.165" />
         <entry key="app/src/main/res/drawable/curved_edit_text.xml" value="0.335" />
         <entry key="app/src/main/res/drawable/curved_edit_text_with_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/img_layer_list.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/product_details_spinner_back_ground.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/slector_for_categories_left_side_list.xml" value="0.1315" />
         <entry key="app/src/main/res/drawable/spinner_back_ground.xml" value="0.227" />
         <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_cart_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_coupons.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />

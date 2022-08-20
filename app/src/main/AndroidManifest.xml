@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyERPSolution">
         <activity
+            android:name=".Shipping.ShippingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
+        <activity
+            android:name=".Cart.CartMainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
+        <activity
             android:name=".ui.ProductDtails.ProductDetails"
-            android:theme="@style/Theme.EasyERPSolution.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
             android:name=".ui.UserActivites.Coupons.TrackOrder"
             android:exported="false"
@@ -45,7 +53,9 @@
         <activity
             android:name=".ui.SplashScreen.SplashScreen"
             android:exported="true"
-            android:theme="@style/SplashScreen" />
+            android:theme="@style/SplashScreen">
+
+        </activity>
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"

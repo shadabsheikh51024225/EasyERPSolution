@@ -1,13 +1,17 @@
 package com.example.easyerpsolution.ui
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
+import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.example.easyerpsolution.Cart.CartMainActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityMainBinding
 
@@ -19,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         setContentView(binding.root)
       //  setSupportActionBar(findViewById(R.id.main_tool_bar))
         if (Build.VERSION.SDK_INT >= 21) {
@@ -44,12 +50,16 @@ class MainActivity : AppCompatActivity() {
         )
         //  setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        getMenuInflater().inflate(R.menu.app_bar_menu, menu);
-//        return true;
-//    }
+    fun moveToCart(View:View){
+
+        val i = Intent(baseContext,CartMainActivity::class.java)
+        startActivity(i)
+    }
+
 
 
 }
