@@ -1,4 +1,4 @@
-package com.example.easyerpsolution.ui.ProductDtails
+package com.example.easyerpsolution.ui.ProductDtails.Adapters
 
 import android.view.LayoutInflater
 import android.view.View

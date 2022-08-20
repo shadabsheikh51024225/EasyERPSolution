@@ -6,22 +6,16 @@ import android.os.Bundle
 import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.StrikethroughSpan
-import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.widget.ArrayAdapter
-import android.widget.TableLayout
-import android.widget.Toast
-import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityProductDetailsBinding
 import com.example.easyerpsolution.ui.ProductDtails.Adapters.ViewPagerAdapter
-import com.example.easyerpsolution.ui.ProductDtails.ProductDetailsAdapterGrid
-import com.google.android.material.tabs.TabLayout
+import com.example.easyerpsolution.ui.ProductDtails.Adapters.ProductDetailsAdapterGrid
 
 class ProductDetails : AppCompatActivity() {
 

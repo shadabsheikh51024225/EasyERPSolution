@@ -5,7 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.easyerpsolution.R
+import com.example.easyerpsolution.databinding.BottomNavFragmentCategoriesBinding
+import com.example.easyerpsolution.databinding.FragmentCheckProductDetailsBinding
+import com.example.easyerpsolution.ui.ProductDtails.Adapters.Checks_product_detail_card_adapter
+import com.example.easyerpsolution.ui.ProductDtails.Adapters.ProductDetailsAdapterGrid
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,43 +25,33 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class Check_ProductDetails : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
+    private var _binding: FragmentCheckProductDetailsBinding? = null
+    private var layoutManager_checks_product_detais_grid: RecyclerView.LayoutManager? = null
+    private var adapter_checks_product_details_grid: RecyclerView.Adapter<Checks_product_detail_card_adapter.ViewHolder>? =
+        null
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_check_product_details, container, false)
+        _binding = FragmentCheckProductDetailsBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+        //grid layout for right cards.
+        layoutManager_checks_product_detais_grid =
+            GridLayoutManager(requireContext(), 1, LinearLayoutManager.VERTICAL, true)
+        binding.recyclerviewChecksProductDetailsGrid.layoutManager = layoutManager_checks_product_detais_grid
+        adapter_checks_product_details_grid = Checks_product_detail_card_adapter()
+        binding.recyclerviewChecksProductDetailsGrid.adapter = adapter_checks_product_details_grid
+        return root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Check_ProductDetails.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Check_ProductDetails().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
+
 }

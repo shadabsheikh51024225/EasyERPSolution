@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="3"
     tools:context=".ui.ProductDtails.ProductDetails">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/coupons_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight=".1"
         android:background="@color/app_bar_back"
         android:elevation="10dp"
         android:tooltipText="Coupons"
@@ -46,7 +48,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="2.9">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -280,14 +283,15 @@ veniam, quis nostrud exercitation ullamco laboris nisi." />
                 android:layout_height="wrap_content"
                 app:tabBackground="@color/white"
                 app:tabGravity="fill"
-                app:tabTextAppearance="@style/CutstomTabStyle"
                 app:tabIndicatorColor="@color/Primary_color"
                 app:tabInlineLabel="true"
                 app:tabMode="fixed"
                 app:tabSelectedTextColor="@color/Primary_color"
-                app:tabTextColor="@color/Secondary_color" >
+                app:tabTextAppearance="@style/CutstomTabStyle"
+                app:tabTextColor="@color/Secondary_color">
 
             </com.google.android.material.tabs.TabLayout>
+
             <View
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
@@ -299,11 +303,49 @@ veniam, quis nostrud exercitation ullamco laboris nisi." />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/tab_viewpager"
-                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="600dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp" />
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:background="@android:color/transparent" >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_to_wishList"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/button_with_border"
+            android:drawableLeft="@drawable/like_holo_two"
+            android:padding="5dp"
+            android:text="Add to wish list"
+            android:textAllCaps="false"
+            android:textColor="@color/Primary_color" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_to_cart"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/curved_button_primary"
+            android:drawableLeft="@drawable/shopping_cart_two"
+            android:padding="5dp"
+            android:text="Add to cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 </LinearLayout>
