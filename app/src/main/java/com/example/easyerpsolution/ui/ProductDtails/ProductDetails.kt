@@ -72,12 +72,21 @@ class ProductDetails : AppCompatActivity() {
 
 
         // tab layout default state.
-        var tab = binding.tabLayoutProductDetails.getTabAt(2)
-        binding.tabLayoutProductDetails.selectTab(tab)
-        binding.tabLayoutProductDetails.setupWithViewPager(binding.tabViewpager)
-
+    //    var tab = binding.tabLayoutProductDetails.getTabAt(2)
+   //     binding.tabLayoutProductDetails.selectTab(tab)
+    setUpTabs()
     }
 
+    private fun setUpTabs() {
+        val viewPager= binding.tabViewpager
+        val adapter = ViewPagerAdapter(supportFragmentManager)
+        adapter.addFragment(Description_ProductDetails(),"Description")
+        adapter.addFragment(Specification_ProductDetails(),"Specification")
+        adapter.addFragment(Check_ProductDetails(),"Checks")
+        viewPager.adapter = adapter
+        binding.tabLayoutProductDetails.setupWithViewPager(viewPager)
+
+    }
 
 
     fun finish(view: View) {
