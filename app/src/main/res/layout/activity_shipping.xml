@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Shipping.ShippingActivity">
+    tools:context=".ui.Shipping.ShippingActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/coupons_toolbar"
         android:layout_width="match_parent"
@@ -300,7 +300,7 @@
                 android:ems="10"
                 android:inputType="textPersonName" />
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/proceed_to_check_out"
+                android:id="@+id/proceed_to_payment"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_gravity="center"

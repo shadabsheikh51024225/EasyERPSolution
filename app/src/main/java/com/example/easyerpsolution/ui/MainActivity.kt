@@ -5,13 +5,14 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import android.widget.ImageView
+import android.widget.CompoundButton
+import android.widget.RadioGroup
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.example.easyerpsolution.Cart.CartMainActivity
+import com.example.easyerpsolution.ui.Cart.CartMainActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityMainBinding
 
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         )
         //  setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
 
 
     }

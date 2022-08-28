@@ -1,4 +1,4 @@
-package com.example.easyerpsolution.Cart
+package com.example.easyerpsolution.ui.Shipping
 
 import android.content.Intent
 import android.os.Build
@@ -7,16 +7,14 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import com.example.easyerpsolution.R
-import com.example.easyerpsolution.Shipping.ShippingActivity
-import com.example.easyerpsolution.databinding.ActivityCartMainBinding
-import com.example.easyerpsolution.databinding.ActivityMainBinding
+import com.example.easyerpsolution.databinding.ActivityShippingBinding
+import com.example.easyerpsolution.ui.PaymnetMethod.PaymentMethods
 
-class CartMainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityCartMainBinding
-
+class ShippingActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityShippingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCartMainBinding.inflate(layoutInflater)
+        binding = ActivityShippingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //  setSupportActionBar(findViewById(R.id.main_tool_bar))
@@ -25,12 +23,11 @@ class CartMainActivity : AppCompatActivity() {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.Primary_color)
+            binding.proceedToPayment.setOnClickListener(View.OnClickListener {
+                val i = Intent(applicationContext,PaymentMethods::class.java)
+                startActivity(i)
+            })
         }
-
-        binding.proceedToCheckOut.setOnClickListener(View.OnClickListener {
-            val i = Intent(applicationContext,ShippingActivity::class.java)
-            startActivity(i)
-        })
     }
     fun finish(view: View) {
         finish()

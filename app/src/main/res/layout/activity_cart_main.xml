@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Cart.CartMainActivity">
+    tools:context=".ui.Cart.CartMainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/coupons_toolbar"
@@ -46,11 +46,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -500,7 +502,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/proceed_to_check_out"
+                android:id="@+id/to_confirm_order_btn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_gravity="center"

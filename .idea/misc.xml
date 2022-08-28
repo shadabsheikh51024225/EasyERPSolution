@@ -20,6 +20,8 @@
         <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/img_layer_list.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/product_details_spinner_back_ground.xml" value="0.154" />
+        <entry key="app/src/main/res/drawable/radio_flat_regular.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/radio_flat_selector.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/slector_for_categories_left_side_list.xml" value="0.1315" />
         <entry key="app/src/main/res/drawable/spinner_back_ground.xml" value="0.227" />
         <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.25" />
@@ -29,6 +31,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_my_orders.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_order_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_payment_methods.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_product_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_purse.xml" value="0.29483695652173914" />
         <entry key="app/src/main/res/layout/activity_register_here.xml" value="0.335" />
