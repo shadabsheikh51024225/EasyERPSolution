@@ -26,7 +26,7 @@ class CartMainActivity : AppCompatActivity() {
             window.statusBarColor = this.resources.getColor(R.color.Primary_color)
         }
 
-        binding.proceedToShipping.setOnClickListener(View.OnClickListener {
+        binding.toConfirmOrderBtn.setOnClickListener(View.OnClickListener {
             val i = Intent(applicationContext,ShippingActivity::class.java)
             startActivity(i)
         })

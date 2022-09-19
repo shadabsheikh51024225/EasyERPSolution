@@ -25,7 +25,7 @@
         <entry key="app/src/main/res/drawable/slector_for_categories_left_side_list.xml" value="0.1315" />
         <entry key="app/src/main/res/drawable/spinner_back_ground.xml" value="0.227" />
         <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_cart_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_cart_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_coupons.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -50,6 +50,7 @@
         <entry key="app/src/main/res/layout/categories_right_card_item.xml" value="0.14463019250253292" />
         <entry key="app/src/main/res/layout/checks_item_product_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/coupons_list_items.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/custom_layout_dialog_confirm_order.xml" value="0.1140625" />
         <entry key="app/src/main/res/layout/fragment_check_product_details.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/fragment_description__product_details.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/layout/fragment_specification_product_details.xml" value="0.33" />

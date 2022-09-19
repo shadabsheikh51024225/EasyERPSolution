@@ -1,9 +1,11 @@
 package com.example.easyerpsolution.ui.PaymnetMethod
 
+import android.app.Dialog
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.Window
 import android.view.WindowManager
 import android.widget.CompoundButton
 import com.example.easyerpsolution.R
@@ -49,6 +51,7 @@ class PaymentMethods : AppCompatActivity(), CompoundButton.OnCheckedChangeListen
             }
         }
     }
+
 
 
 
