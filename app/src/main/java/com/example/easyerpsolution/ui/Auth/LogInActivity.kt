@@ -1,4 +1,4 @@
-package com.example.easyerpsolution.ui.LogIn
+package com.example.easyerpsolution.ui.Auth
 
 import android.content.Intent
 import android.os.Build

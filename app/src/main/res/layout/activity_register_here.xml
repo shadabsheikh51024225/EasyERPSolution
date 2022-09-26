@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".ui.LogIn.LogInActivity">
+    tools:context=".ui.Auth.LogInActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="155dp"
-        android:layout_height="150dp"
+        android:layout_width="204dp"
+        android:layout_height="186dp"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         app:srcCompat="@drawable/easy_logo_three" />
 
 
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:text="Register Here.."
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -40,13 +40,13 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/log_in_user_name_icon_three"
-        android:elevation="5dp"
+        android:drawableLeft="@drawable/og_in_user_name_icon_two"
+        android:elevation="1dp"
         android:ems="10"
         android:hint="  Username"
         android:inputType="textEmailAddress"
@@ -55,13 +55,13 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/log_in_password_icon_three"
-        android:elevation="5dp"
+        android:drawableLeft="@drawable/log_in_password_icon_two"
+        android:elevation="1dp"
         android:ems="10"
         android:hint="  Password"
         android:inputType="textEmailAddress"
@@ -69,16 +69,15 @@
         android:textColorHint="@color/Tertiary_color" />
 
 
-
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/log_in_password_icon_three"
-        android:elevation="5dp"
+        android:drawableLeft="@drawable/log_in_password_icon_two"
+        android:elevation="1dp"
         android:ems="10"
         android:hint="  Confirm Password"
         android:inputType="textEmailAddress"
@@ -87,24 +86,27 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/log_in_email_icon_three"
-        android:elevation="5dp"
+
+        android:drawableLeft="@drawable/log_in_email_icon_two"
+        android:elevation="1dp"
         android:ems="10"
-        android:hint="  email"
+        android:hint=" email"
         android:inputType="textPassword"
         android:textColorHint="@color/Tertiary_color" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/curved_button_primary"
         android:elevation="5dp"
         android:text="Register" />
@@ -112,7 +114,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <TextView
@@ -122,7 +124,7 @@
             android:layout_marginLeft="50dp"
             android:text="Don you already have an account? "
             android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/textView_log_in_here"
