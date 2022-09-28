@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:text="Register Here.."
         android:textColor="@color/black"
@@ -33,7 +33,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="20dp"
         android:text="Enter all details"
         android:textColor="@color/Tertiary_color"
         android:textColorHint="@color/Tertiary_color" />
