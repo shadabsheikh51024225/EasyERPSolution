@@ -38,69 +38,111 @@
         android:textColor="@color/Tertiary_color"
         android:textColorHint="@color/Tertiary_color" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="377dp"
-        android:layout_height="43dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/og_in_user_name_icon_two"
-        android:elevation="1dp"
-        android:ems="10"
-        android:hint="  Username"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColorHint="@color/Tertiary_color" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="377dp"
-        android:layout_height="43dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/log_in_password_icon_two"
-        android:elevation="1dp"
-        android:ems="10"
-        android:hint="  Password"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColorHint="@color/Tertiary_color" />
+        app:errorEnabled="true"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextUserName"
+            android:layout_width="377dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/curved_edit_text"
+            android:drawableLeft="@drawable/og_in_user_name_icon_two"
+            android:drawablePadding="3dp"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="  Username"
+            android:inputType="textEmailAddress"
+            android:maxLength="12"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Secondary_color" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="377dp"
-        android:layout_height="43dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/curved_edit_text"
-        android:drawableLeft="@drawable/log_in_password_icon_two"
-        android:elevation="1dp"
-        android:ems="10"
-        android:hint="  Confirm Password"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColorHint="@color/Tertiary_color" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeErrorColor="@android:color/transparent"
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="377dp"
-        android:layout_height="43dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/curved_edit_text"
+        app:errorEnabled="true"
+        app:hintEnabled="false">
 
-        android:drawableLeft="@drawable/log_in_email_icon_two"
-        android:elevation="1dp"
-        android:ems="10"
-        android:hint=" email"
-        android:inputType="textPassword"
-        android:textColorHint="@color/Tertiary_color" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="377dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@drawable/curved_edit_text"
+            android:drawableLeft="@drawable/log_in_password_icon_two"
+            android:drawablePadding="3dp"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Secondary_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextConfirmPassword"
+            android:layout_width="377dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/curved_edit_text"
+            android:drawableLeft="@drawable/log_in_password_icon_two"
+            android:drawablePadding="3dp"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="  Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Secondary_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="377dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:hint=" email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/curved_edit_text"
+            android:drawableLeft="@drawable/log_in_email_icon_two"
+            android:drawablePadding="3dp"
+            android:elevation="1dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Secondary_color"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/register_here"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"

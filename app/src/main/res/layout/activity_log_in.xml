@@ -5,8 +5,9 @@
     android:id="@+id/log_in_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="2"
     tools:context=".ui.Auth.LogInActivity">
 
     <ImageView
@@ -15,13 +16,13 @@
         android:layout_height="219dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:layout_weight="0.5"
+        android:layout_weight="1.6"
         app:srcCompat="@drawable/easy_logo_three" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:foregroundGravity="bottom"
         android:orientation="vertical">
 
@@ -46,7 +47,7 @@
             android:textColorHint="@color/Tertiary_color" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextTextUserName"
             android:layout_width="377dp"
             android:layout_height="43dp"
             android:layout_marginStart="10dp"
