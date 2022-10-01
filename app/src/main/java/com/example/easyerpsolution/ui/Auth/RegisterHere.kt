@@ -1,16 +1,25 @@
 package com.example.easyerpsolution.ui.Auth
 
+import android.app.Dialog
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
 import android.util.Patterns
+import android.view.Gravity
+import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityRegisterHereBinding
 
-class RegisterHere : AppCompatActivity() {
 
+class RegisterHere : AppCompatActivity() {
+    private var successPassword: Boolean = false
+    private var successConfirmPassword: Boolean = false
+    private var successEmail: Boolean = false
+    private var successUserName: Boolean = false
+    private var handler: Handler? = null
     private lateinit var binding: ActivityRegisterHereBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +27,7 @@ class RegisterHere : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        //get the string data first and make it final for security and cosistnancy.
+
 
 
         if (Build.VERSION.SDK_INT >= 21) {
@@ -34,7 +43,6 @@ class RegisterHere : AppCompatActivity() {
         }
 
         binding.registerHere.setOnClickListener {
-
 
             getPassword(
                 binding.editTextTextPassword.text.toString(),
@@ -52,17 +60,24 @@ class RegisterHere : AppCompatActivity() {
                 binding.editTextTextConfirmPassword.text.toString()
             )
 
+            if (successPassword && successConfirmPassword && successEmail && successUserName) {
+                generateSuccessDialog()
+            }
+
+
         }
 
     }
 
     private fun getPassword(PasswordText: String, LengthOfText: Int) {
+
         if (PasswordText.isEmpty()) {
             binding.textInputLayoutPassword.error = "Invalid Password"
         } else if (LengthOfText <= 7) {
             binding.textInputLayoutPassword.error = " Password can not be less than 8 digits"
         } else {
             binding.textInputLayoutPassword.error = null
+            successPassword = true
         }
     }
 
@@ -73,6 +88,7 @@ class RegisterHere : AppCompatActivity() {
             binding.textInputLayoutUserName.error = " Username can not be less than 4 digits"
         } else {
             binding.textInputLayoutUserName.error = null
+            successUserName = true
         }
     }
 
@@ -83,6 +99,7 @@ class RegisterHere : AppCompatActivity() {
             binding.textInputLayoutEmail.error = "   Please enter a valid email"
         } else {
             binding.textInputLayoutEmail.error = null
+            successEmail = true
         }
     }
 
@@ -102,7 +119,24 @@ class RegisterHere : AppCompatActivity() {
             binding.textInputLayoutConfirmPassword.error = " Password doesn't match"
         } else {
             binding.textInputLayoutConfirmPassword.error = null
+            successConfirmPassword = true
         }
+    }
+
+    private fun generateSuccessDialog() {
+        val dialog = Dialog(this@RegisterHere)
+        dialog.setContentView(R.layout.register_success_dialog_layout)
+        dialog.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, 600);
+        dialog.window?.setGravity(Gravity.BOTTOM)
+        dialog.window?.attributes?.windowAnimations = R.style.dialogAnimation
+        dialog.show()
+        Handler().postDelayed({
+            if (dialog.isShowing) {
+                dialog.dismiss()
+                finish()
+            }
+        }, 2000)
+
     }
 
 

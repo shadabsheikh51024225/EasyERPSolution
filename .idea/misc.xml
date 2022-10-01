@@ -17,12 +17,15 @@
         <entry key="app/src/main/res/drawable/curved_buttons.xml" value="0.165" />
         <entry key="app/src/main/res/drawable/curved_edit_text.xml" value="0.335" />
         <entry key="app/src/main/res/drawable/curved_edit_text_with_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/dialog_animation.xml" value="0.391" />
+        <entry key="app/src/main/res/drawable/dialog_background.xml" value="0.39" />
         <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/img_layer_list.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/product_details_spinner_back_ground.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/radio_flat_regular.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/radio_flat_selector.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/slector_for_categories_left_side_list.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/slide_bottom.xml" value="0.391" />
         <entry key="app/src/main/res/drawable/spinner_back_ground.xml" value="0.227" />
         <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_cart_main.xml" value="0.25" />
@@ -61,6 +64,7 @@
         <entry key="app/src/main/res/layout/new_actvity_top_card_item.xml" value="0.16485507246376813" />
         <entry key="app/src/main/res/layout/product_details_items.xml" value="0.39010416666666664" />
         <entry key="app/src/main/res/layout/purse_list_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/register_success_dialog_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/to_buy_ad_card_items.xml" value="0.1" />
         <entry key="app/src/main/res/layout/to_buy_categories_items.xml" value="0.14412360688956433" />
         <entry key="app/src/main/res/layout/to_buy_new_products_item.xml" value="0.14412360688956433" />

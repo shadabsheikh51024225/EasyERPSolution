@@ -32,7 +32,6 @@ class LogInActivity : AppCompatActivity() {
         binding.textViewRegisterHere.setOnClickListener(){
             val i = Intent(this, RegisterHere::class.java)
             startActivity(i)
-            finish()
         }
     }
 }
