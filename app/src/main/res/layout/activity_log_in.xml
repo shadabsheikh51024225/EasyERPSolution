@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context=".ui.Auth.LogInActivity">
+    tools:context=".Final.Auth.LogInActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -45,9 +45,15 @@
             android:text="Enter login details"
             android:textColor="@color/Tertiary_color"
             android:textColorHint="@color/Tertiary_color" />
-
-        <EditText
-            android:id="@+id/editTextTextUserName"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutUserNameLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextUserNameLogIn"
             android:layout_width="377dp"
             android:layout_height="43dp"
             android:layout_marginStart="10dp"
@@ -56,12 +62,18 @@
             android:drawableLeft="@drawable/log_in_email_icon_two"
             android:elevation="1dp"
             android:ems="10"
-            android:hint="email"
+            android:hint="Username"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/Tertiary_color" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword"
+            android:textColor="@color/Secondary_color" /> </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPasswordLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPasswordLogIn"
             android:layout_width="377dp"
             android:layout_height="43dp"
             android:layout_marginLeft="10dp"
@@ -73,17 +85,19 @@
             android:hint="  Password..."
             android:inputType="textPassword"
             android:paddingLeft="5dp"
-            android:textColorHint="@color/Tertiary_color" />
+            android:drawablePadding="5dp"
+            android:textColor="@color/Secondary_color" /></com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/forgotPasswordTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="right"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="9dp"
-            android:text="Have you forgotten your password?"
-            android:textColor="@color/black"
+            android:text="Forgot password?"
+            android:textColor="@color/Primary_color"
             android:textStyle="bold" />
 
         <Button
@@ -111,7 +125,7 @@
                 android:layout_marginLeft="80dp"
                 android:text="Don't have an account? "
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <TextView
                 android:id="@+id/textView_register_here"

@@ -27,6 +27,7 @@
         <item>XLL</item>
     </array>
     <!--To Buy Activity-->
+    <string name="forgo_password">   Please enter your email address to receive a reset password link..</string>
     <string name="see_more"> <u>See more></u></string>
     <string name="title_activity_coupons">CouponsActivity</string>
     <string name="large_text">

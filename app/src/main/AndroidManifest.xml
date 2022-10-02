@@ -11,55 +11,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyERPSolution" >
         <activity
-            android:name=".ui.PaymnetMethod.PaymentMethods"
+            android:name=".Final.PaymnetMethod.PaymentMethods"
             android:exported="true"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar">
 
         </activity>
         <activity
-            android:name="com.example.easyerpsolution.ui.Shipping.ShippingActivity"
+            android:name="com.example.easyerpsolution.Final.Shipping.ShippingActivity"
             android:exported="true"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" >
         </activity>
         <activity
-            android:name="com.example.easyerpsolution.ui.Cart.CartMainActivity"
+            android:name="com.example.easyerpsolution.Final.Cart.CartMainActivity"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.ProductDtails.ProductDetails"
+            android:name=".Final.ProductDtails.ProductDetails"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.UserActivites.Coupons.TrackOrder"
+            android:name=".Final.UserActivites.Coupons.TrackOrder"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.UserActivites.Coupons.OrderDetails"
+            android:name=".Final.UserActivites.Coupons.OrderDetails"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.UserActivites.Coupons.MyOrders"
+            android:name=".Final.UserActivites.Coupons.MyOrders"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.UserActivites.Coupons.PurseActivity"
+            android:name=".Final.UserActivites.Coupons.PurseActivity"
             android:exported="false"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.UserActivites.Coupons.CouponsActivity"
+            android:name=".Final.UserActivites.Coupons.CouponsActivity"
             android:exported="false"
             android:label="@string/title_activity_coupons"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".ui.Auth.RegisterHere"
+            android:name=".Final.Auth.RegisterHere"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".ui.Auth.LogInActivity"
+            android:name=".Final.Auth.LogInActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".ui.SplashScreen.SplashScreen"
+            android:name=".Final.SplashScreen.SplashScreen"
             android:exported="true"
             android:theme="@style/SplashScreen" > <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -68,7 +68,7 @@
         </intent-filter>
         </activity>
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".Final.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >

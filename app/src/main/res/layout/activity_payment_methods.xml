@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.Shipping.ShippingActivity">
+    tools:context=".Final.Shipping.ShippingActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/coupons_toolbar"
         android:layout_width="match_parent"

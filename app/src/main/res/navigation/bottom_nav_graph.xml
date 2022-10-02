@@ -6,27 +6,27 @@
     app:startDestination="@id/navigation_to_buy">
     <fragment
         android:id="@+id/navigation_me"
-        android:name="com.example.easyerpsolution.ui.BottomNavigationMe.BottomNavigationMeFragment"
+        android:name="com.example.easyerpsolution.Final.BottomNavigationMe.BottomNavigationMeFragment"
         android:label="bottom_navigation_me_fragment"
         tools:layout="@layout/bottom_navigation_new_stuff_fragment" />
     <fragment
         android:id="@+id/navigation_gal"
-        android:name="com.example.easyerpsolution.ui.BottomNavigationGals.BottomNavigationGalFragment"
+        android:name="com.example.easyerpsolution.Final.BottomNavigationGals.BottomNavigationGalFragment"
         android:label="bottom_navigation_gal_fragment"
         tools:layout="@layout/bottom_navigation_gal_fragment" />
     <fragment
         android:id="@+id/navigation_to_buy"
-        android:name="com.example.easyerpsolution.ui.BottomNavigationToBuy.BottomNavigationToBuyFragment"
+        android:name="com.example.easyerpsolution.Final.BottomNavigationToBuy.BottomNavigationToBuyFragment"
         android:label="bottom_nav_fragment_categories"
         tools:layout="@layout/bottom_nav_fragment_categories" />
     <fragment
         android:id="@+id/navigation_New"
-        android:name="com.example.easyerpsolution.ui.BottomNavigationNew.BottomNavigationNewFragment"
+        android:name="com.example.easyerpsolution.Final.BottomNavigationNew.BottomNavigationNewFragment"
         android:label="bottom_nav_fragment_new"
         tools:layout="@layout/bottom_nav_fragment_me" />
     <fragment
         android:id="@+id/navigation_categories"
-        android:name="com.example.easyerpsolution.ui.BottomNavigationCategories.BottomNavigationCategoriesFragment"
+        android:name="com.example.easyerpsolution.Final.BottomNavigationCategories.BottomNavigationCategoriesFragment"
         android:label="bottom_nav_fragment_to_buy"
         tools:layout="@layout/bottom_nav_fragment_to_buy" />
 </navigation>

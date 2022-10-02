@@ -54,6 +54,7 @@
         <entry key="app/src/main/res/layout/checks_item_product_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/coupons_list_items.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_layout_dialog_confirm_order.xml" value="0.1140625" />
+        <entry key="app/src/main/res/layout/forgot_password_dialog.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_check_product_details.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/fragment_description__product_details.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/layout/fragment_specification_product_details.xml" value="0.33" />

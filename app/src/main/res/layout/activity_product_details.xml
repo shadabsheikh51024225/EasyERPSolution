@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="3"
-    tools:context=".ui.ProductDtails.ProductDetails">
+    tools:context=".Final.ProductDtails.ProductDetails">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/coupons_toolbar"

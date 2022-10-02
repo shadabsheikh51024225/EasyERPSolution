@@ -8,17 +8,17 @@
 
     <fragment
         android:id="@+id/description_ProductDetails"
-        android:name="com.example.easyerpsolution.ui.ProductDtails.Description_ProductDetails"
+        android:name="com.example.easyerpsolution.Final.ProductDtails.Description_ProductDetails"
         android:label="fragment_description__product_details"
         tools:layout="@layout/fragment_description__product_details" />
     <fragment
         android:id="@+id/specification_ProductDetails"
-        android:name="com.example.easyerpsolution.ui.ProductDtails.Specification_ProductDetails"
+        android:name="com.example.easyerpsolution.Final.ProductDtails.Specification_ProductDetails"
         android:label="fragment_specification_product_details"
         tools:layout="@layout/fragment_specification_product_details" />
     <fragment
         android:id="@+id/check_ProductDetails"
-        android:name="com.example.easyerpsolution.ui.ProductDtails.Check_ProductDetails"
+        android:name="com.example.easyerpsolution.Final.ProductDtails.Check_ProductDetails"
         android:label="fragment_check_product_details"
         tools:layout="@layout/fragment_check_product_details" />
 </navigation>
