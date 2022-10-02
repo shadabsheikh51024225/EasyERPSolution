@@ -1,27 +1,25 @@
-package com.example.easyerpsolution.Final.Auth
+package com.example.easyerpsolution.Final.Auth.Register
 
 import android.app.Dialog
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
-import android.util.Log
 import android.util.Patterns
 import android.view.Gravity
 import android.view.ViewGroup
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import com.example.easyerpsolution.Final.Auth.LogIn.LogInActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityRegisterHereBinding
-import okhttp3.OkHttpClient
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 
 class RegisterHere : AppCompatActivity() {
+    private lateinit var viewModel: RegisterHereViewModel
     private var successPassword: Boolean = false
     private var successConfirmPassword: Boolean = false
     private var successEmail: Boolean = false
@@ -32,7 +30,7 @@ class RegisterHere : AppCompatActivity() {
         binding = ActivityRegisterHereBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
+        initViewModel()
 
 
 
@@ -67,9 +65,15 @@ class RegisterHere : AppCompatActivity() {
             )
 
             if (successPassword && successConfirmPassword && successEmail && successUserName) {
-                generateSuccessDialog()
+                createUser(binding.editTextTextUserName.text.toString(),binding.editTextEmail.text.toString(),binding.editTextTextPassword.text.toString(),binding.editTextTextConfirmPassword.text.toString())
             }
+
         }
+    }
+    private fun createUser(name:String,email:String,password:String,password_confirmation:String) {
+        val user  = RegisterUserDataModel(name,email,password,password_confirmation)
+        viewModel.createNewUser(user)
+
     }
 
     private fun getPassword(PasswordText: String, LengthOfText: Int) {
@@ -139,9 +143,21 @@ class RegisterHere : AppCompatActivity() {
         Handler().postDelayed({
             if (dialog.isShowing) {
                 dialog.dismiss()
-                // finish()
+                 finish()
             }
         }, 2000)
+    }
+    private fun initViewModel() {
+        viewModel = ViewModelProvider(this).get(RegisterHereViewModel::class.java)
+        viewModel.getCreateNewUserObserver().observe(this, Observer <UserResponseRegister?>{
+
+            if(it  == null) {
+                Toast.makeText(this@RegisterHere, "Failed to create User", Toast.LENGTH_LONG).show()
+            } else {
+                //{"code":201,"meta":null,"data":{"id":2877,"name":"xxxxxaaaaabbbbb","email":"xxxxxaaaaabbbbb@gmail.com","gender":"male","status":"active"}}
+                generateSuccessDialog()
+            }
+        })
     }
 }
 

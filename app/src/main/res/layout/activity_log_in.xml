@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context=".Final.Auth.LogInActivity">
+    tools:context=".Final.Auth.LogIn.LogInActivity">
 
     <ImageView
         android:id="@+id/imageView"

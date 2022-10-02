@@ -1,4 +1,4 @@
-package com.example.easyerpsolution.Final.Auth
+package com.example.easyerpsolution.Final.Auth.LogIn
 
 import android.app.Dialog
 import android.content.Intent
@@ -13,14 +13,20 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.navigation.navArgument
+import android.widget.Toast
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import com.example.easyerpsolution.Final.Auth.Register.RegisterHere
+import com.example.easyerpsolution.Final.Auth.Register.RegisterHereViewModel
+import com.example.easyerpsolution.Final.Auth.Register.RegisterUserDataModel
+import com.example.easyerpsolution.Final.Auth.Register.UserResponseRegister
 import com.example.easyerpsolution.Final.MainActivity
 import com.example.easyerpsolution.R
 import com.example.easyerpsolution.databinding.ActivityLogInBinding
 import com.google.android.material.textfield.TextInputLayout
 
 class LogInActivity : AppCompatActivity() {
-
+    private lateinit var viewModel: LogInViewModel
     private lateinit var binding: ActivityLogInBinding
     private var successPasswordLogIn: Boolean = false
     private var successUserNameLogIn: Boolean = false
@@ -29,6 +35,7 @@ class LogInActivity : AppCompatActivity() {
         binding = ActivityLogInBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        initViewModel()
         if (Build.VERSION.SDK_INT >= 21) {
             val window = this.window
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
@@ -49,10 +56,7 @@ class LogInActivity : AppCompatActivity() {
                 binding.editTextTextPasswordLogIn.text?.length!!.toInt()
             )
             if (successPasswordLogIn && successPasswordLogIn) {
-                generateSuccessDialogLogIn()
-                val i = Intent(this, MainActivity::class.java)
-                startActivity(i)
-                finish()
+                createUser( binding.editTextTextUserNameLogIn.text.toString(), binding.editTextTextPasswordLogIn.text.toString())
             }
 
         }
@@ -60,6 +64,26 @@ class LogInActivity : AppCompatActivity() {
             val i = Intent(this, RegisterHere::class.java)
             startActivity(i)
         }
+    }
+    private fun createUser(email:String,password:String) {
+        val user  = LogInUserDataModel(email,password)
+        viewModel.LogInUser(user)
+
+    }
+
+
+    private fun initViewModel() {
+        viewModel = ViewModelProvider(this).get(LogInViewModel::class.java)
+        viewModel.getCreateNewUserObserver().observe(this, Observer <UserResponseLogIn?>{
+
+            if(it  == null) {
+                Toast.makeText(this@LogInActivity, "Not a valid entry", Toast.LENGTH_SHORT).show()
+            } else {
+                //{"code":201,"meta":null,"data":{"id":2877,"name":"xxxxxaaaaabbbbb","email":"xxxxxaaaaabbbbb@gmail.com","gender":"male","status":"active"}}
+              //  Toast.makeText(this@LogInActivity, "success to create User", Toast.LENGTH_LONG).show()
+                generateSuccessDialogLogIn()
+            }
+        })
     }
 
     private fun getPasswordLogIn(PasswordText: String, LengthOfText: Int) {
@@ -106,7 +130,7 @@ class LogInActivity : AppCompatActivity() {
                 startActivity(i)
                 finish()
             }
-        }, 2000)
+        }, 1500)
 
     }
 

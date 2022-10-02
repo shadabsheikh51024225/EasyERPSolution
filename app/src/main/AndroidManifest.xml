@@ -51,11 +51,11 @@
             android:label="@string/title_activity_coupons"
             android:theme="@style/Theme.EasyERPSolution.NoActionBar" />
         <activity
-            android:name=".Final.Auth.RegisterHere"
+            android:name=".Final.Auth.Register.RegisterHere"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Final.Auth.LogInActivity"
+            android:name=".Final.Auth.LogIn.LogInActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
